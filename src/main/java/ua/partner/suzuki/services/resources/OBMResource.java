@@ -53,7 +53,7 @@ public class OBMResource {
     	obm.setEngineNumber(engineNumber);
     	return service.update(obm);
     }
-    
+    //Test
     @DELETE
     @Path("/{engineNumber}")
     @Produces(MediaType.APPLICATION_XML)
