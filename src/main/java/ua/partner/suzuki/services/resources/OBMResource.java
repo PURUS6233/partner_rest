@@ -40,9 +40,9 @@ public class OBMResource {
     @POST
     @Consumes(MediaType.TEXT_PLAIN)
     @Produces(MediaType.APPLICATION_XML)
-    public Collection<OBM> addOBMs(String engineNumber) throws ServiceException, DomainException, DAOException{
-    	loaderService.saveToFile(engineNumber);
-    	return service.add(engineNumber);
+    public Collection<OBM> addOBMs(String engineNumbers) throws ServiceException, DomainException, DAOException{
+    	loaderService.saveToFile(engineNumbers);
+    	return service.add(engineNumbers);
     }
     
     @PUT
