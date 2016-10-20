@@ -22,9 +22,6 @@ import ua.partner.suzuki.service.WarehouseService;
 import ua.partner.suzuki.service.impl.EngineNumbersLoaderServiceImpl;
 import ua.partner.suzuki.service.impl.WarehouseServiceImpl;
 
-/**
- * Root resource (exposed at "myresource" path)
- */
 @Path("/obms")
 public class OBMResource {
 	
@@ -53,7 +50,7 @@ public class OBMResource {
     	obm.setEngineNumber(engineNumber);
     	return service.update(obm);
     }
-    //Test
+    
     @DELETE
     @Path("/{engineNumber}")
     @Produces(MediaType.APPLICATION_XML)
